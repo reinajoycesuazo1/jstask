@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #extraRowsHL, #extraRowsTotal {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Web Output #1</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="txtNum">Insert any Positive Numbers:</label>
+            </td>
+            <td>
+                <input type="text" id="txtNum">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="btn1">Insert</button>
+                <button id="btn2">Clear Entry</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <fieldset>
+        <legend>Inserted Numbers</legend>
+        <table id="tblNumbers">
+        </table>
+    </fieldset>
+
+    <button id="btn3" style="margin-top: 10px;">Clear Items</button>
+    <button id="btn4" style="margin-top: 10px;">Get Total</button>
+    <button id="btn5" style="margin-top: 10px;">Identify Highest and Lowest Number</button>
+
+    <label for="sortSelect">Sort by:</label>
+    <select id="sortSelect">
+        <option value="">Please select</option>
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+
+    <script src="script.js"></script>
+</body>
+</html>
